@@ -88,22 +88,22 @@ public class CrabMovement : MonoBehaviour
             speed = 0f;
         }
 
-        if ((other.gameObject.CompareTag("doubleTrench")))
-        {
-            Debug.Log("CRAB and DOUBLETRENCH");
+        // if ((other.gameObject.CompareTag("doubleTrench")))
+        // {
+        //     Debug.Log("CRAB and DOUBLETRENCH");
 
-            TrapCrab();
+        //     TrapCrab();
 
-        }
-        if ((other.gameObject.CompareTag("wetTrench")))
-        {
-            if (speed == 0)
-            {
-                Debug.Log("CRAB and wetTrench");
-                gameObject.tag = "dead";
-                Destroy(this.gameObject);
-            }
-        }
+        // }
+        // if ((other.gameObject.CompareTag("wetTrench")))
+        // {
+        //     if (speed == 0)
+        //     {
+        //         Debug.Log("CRAB and wetTrench");
+        //         gameObject.tag = "dead";
+        //         Destroy(this.gameObject);
+        //     }
+        // }
 		
 	}
 

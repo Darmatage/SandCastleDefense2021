@@ -15,7 +15,7 @@ public class PlayerController : MonoBehaviour
     public Tilemap tilemapColliders;
     public RuleTile trenchRuleTileDry;
     public RuleTile trenchRuleTileWet;
-    public RuleTile trenchRuleTileDouble;
+    //public RuleTile trenchRuleTileDouble;
 
 
     public Transform attachPoint;
@@ -299,21 +299,25 @@ public class PlayerController : MonoBehaviour
         {
             //Debug.Log("player_is_on_trench is true");
             player_is_on_trench = true;
-            if (Input.GetButtonDown("Dig") && has_shovel == true && !other.gameObject.CompareTag("doubleTrench") &&
-                !other.gameObject.CompareTag("wetTrench") )
-            {
-                digAudio.Play();
-                Destroy(other.gameObject);
-                digs_left--;
-                SetDigsLeftCountText();
-                Vector3Int currCell = tilemapColliders.WorldToCell(other.transform.position);
-                Debug.Log("DIGGING DOUBLE TRENCH");
-                tilemapColliders.SetTile(currCell, trenchRuleTileDouble);
-                GameObject thisTrench = Instantiate(trench, currCell, transform.rotation);
-                thisTrench.tag = "doubleTrench";
-                thisTrench.SetActive(true);
-                thisTrench.transform.SetParent(trenchParent.transform);
-            }
+
+
+            // if (Input.GetButtonDown("Dig") && has_shovel == true && !other.gameObject.CompareTag("doubleTrench") &&
+            //     !other.gameObject.CompareTag("wetTrench") )
+            // {
+            //     digAudio.Play();
+            //     Destroy(other.gameObject);
+            //     digs_left--;
+            //     SetDigsLeftCountText();
+            //     Vector3Int currCell = tilemapColliders.WorldToCell(other.transform.position);
+            //     Debug.Log("DIGGING DOUBLE TRENCH");
+            //     tilemapColliders.SetTile(currCell, trenchRuleTileDouble);
+            //     GameObject thisTrench = Instantiate(trench, currCell, transform.rotation);
+            //     thisTrench.tag = "doubleTrench";
+            //     thisTrench.SetActive(true);
+            //     thisTrench.transform.SetParent(trenchParent.transform);
+            // }
+
+            
             /*other.gameObject.GetComponent<Trench>().trench_dig_count++;
             Debug.Log("trench_dig_count is " + other.gameObject.GetComponent<Trench>().trench_dig_count);*/
             if (digs_left == 0)
