@@ -58,7 +58,7 @@ public class CrabMovement : MonoBehaviour
             {
                 capturedTower = other.gameObject;
                 // removed the if statement for without destroying shovel: (other.gameObject.CompareTag("beachshovel")
-                speed = 5;
+                speed *= 5;
                 target.y = -10;
                 target.x = Random.Range(-20f, 20f);
 
