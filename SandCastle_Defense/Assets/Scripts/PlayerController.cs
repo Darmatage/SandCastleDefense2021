@@ -172,7 +172,7 @@ public class PlayerController : MonoBehaviour
                         Destroy(current_item);
                         if (has_upgraded_shovel)
                         {
-                            digs_left = 10;
+                            digs_left = 15;
                         }
                         else
                         {
@@ -322,7 +322,14 @@ public class PlayerController : MonoBehaviour
                 has_shovel = false;
                 has_item = false;
                 Destroy(current_item);
-                digs_left = 5;
+                if (has_upgraded_shovel)
+                {
+                    digs_left = 15;
+                }
+                else
+                {
+                    digs_left = 5;
+                }
                 BuyShop.shovelpurchased = false;
                 //shovel disappears off the kid
                 animator.SetBool("Shovel", has_shovel);
@@ -376,6 +383,7 @@ public class PlayerController : MonoBehaviour
                 digsLeftUI.SetActive(false);
                 pickUpToolAudio.Play();
                 SetBucketLeftCountText();
+                SetBucketState();
 
                 other.gameObject.SetActive(false);
                 has_bucket = true;

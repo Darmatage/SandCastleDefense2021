@@ -148,7 +148,7 @@ public class BuyShop : MonoBehaviour
             playercontroller.has_upgraded_shovel = true;
             if (playercontroller.digs_left > 0)
             {
-                int additional_digs = 10 - playercontroller.digs_left;
+                int additional_digs = 15 - playercontroller.digs_left;
                 playercontroller.digs_left += additional_digs;
                 playercontroller.SetDigsLeftCountText();
             }
