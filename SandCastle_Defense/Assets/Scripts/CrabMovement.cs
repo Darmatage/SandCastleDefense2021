@@ -58,7 +58,7 @@ public class CrabMovement : MonoBehaviour
             {
                 capturedTower = other.gameObject;
                 // removed the if statement for without destroying shovel: (other.gameObject.CompareTag("beachshovel")
-                speed *= 5;
+                speed = 5;
                 target.y = -10;
                 target.x = Random.Range(-20f, 20f);
 
@@ -120,18 +120,27 @@ public class CrabMovement : MonoBehaviour
                 if (hasTower)
                 {
                     DropTower();
-                    
+
                     //capturedTower.tag = "castle";
                     //Debug.Log("CASTLE NOW!!!!");
 
+                    target.y = -10;
+                    target.x = Random.Range(-20f, 20f);
+
+                    GetComponent<SpriteRenderer>().color = Color.gray;
+                    gameObject.tag = "dead";
+                    deflectCrabAudio.Play();
+                    PlayerController.crabsHit++;
+                } else
+                {
+                    GetComponent<SpriteRenderer>().color = Color.gray;
+                    speed = -5;
+                    //target.y = -10;
+                    //target.x = Random.Range(-20f, 20f);
+                    gameObject.tag = "dead";
+                    deflectCrabAudio.Play();
+                    PlayerController.crabsHit++;
                 }
-                GetComponent<SpriteRenderer>().color = Color.gray;
-                speed = -5;
-                //target.y = -10;
-                //target.x = Random.Range(-20f, 20f);
-                gameObject.tag = "dead";
-                deflectCrabAudio.Play();
-                PlayerController.crabsHit++;
             }
 
 
@@ -210,14 +219,23 @@ public class CrabMovement : MonoBehaviour
                 //capturedTower.tag = "castle";
                 //Debug.Log("CASTLE NOW!!!!");
 
+                target.y = -10;
+                target.x = Random.Range(-20f, 20f);
+
+                GetComponent<SpriteRenderer>().color = Color.gray;
+                gameObject.tag = "dead";
+                deflectCrabAudio.Play();
+                PlayerController.crabsHit++;
+            } else
+            {
+                GetComponent<SpriteRenderer>().color = Color.gray;
+                speed = -5;
+                //target.y = -10;
+                //target.x = Random.Range(-20f, 20f);
+                gameObject.tag = "dead";
+                deflectCrabAudio.Play();
+                PlayerController.crabsHit++;
             }
-            GetComponent<SpriteRenderer>().color = Color.gray;
-            speed = -5;
-            //target.y = -10;
-            //target.x = Random.Range(-20f, 20f);
-            gameObject.tag = "dead";
-            deflectCrabAudio.Play();
-            PlayerController.crabsHit++;
 
             hitByUpgradedCatcher = false;
         }
