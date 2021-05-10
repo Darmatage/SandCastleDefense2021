@@ -1,0 +1,91 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - sanddollar
+  - crab
+  - castle
+  - beachshovel
+  - wave
+  - shop
+  - trench
+  - sandpile
+  - bucket
+  - crabcatcher
+  - PauseMenuSlider
+  - tower
+  - physicalshop
+  - crabTrap
+  - background
+  - doubleTrench
+  - waveBlocker
+  - rock
+  - centerTower
+  - wetTrench
+  - bigcrab
+  - dead
+  - upgradedCrabCatcher
+  - upgradedBucket
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - 
+  - Castle
+  - Trenches
+  - Crab
+  - BigCrab
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: Waves
+    uniqueID: 2030155209
+    locked: 0
+  - name: Kid
+    uniqueID: 568362871
+    locked: 0
+  - name: Crabs
+    uniqueID: 3288357073
+    locked: 0
+  - name: BeachShovel
+    uniqueID: 718684099
+    locked: 0
+  - name: Sandcastle
+    uniqueID: 1014968431
+    locked: 0
+  - name: Sanddollars
+    uniqueID: 2367535129
+    locked: 0
+  - name: Destroyed Sandcastle
+    uniqueID: 603820957
+    locked: 0
+  - name: Trenches
+    uniqueID: 3412369513
+    locked: 0
