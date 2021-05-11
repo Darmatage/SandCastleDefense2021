@@ -22,6 +22,7 @@ public class PlayerController : MonoBehaviour
     public GameObject trench;
 
     public TextMeshProUGUI sanddollarCountText;
+
     public int sanddollarCount;
 
     public TextMeshProUGUI digsLeftCountText;
