@@ -68,7 +68,7 @@ public class BigCrabMovement : MonoBehaviour
                 other.transform.parent = transform;
                 if (towerstaken == 2)
                 {
-                    speed = 5;
+                    speed = .7f;
                     target.y = -10;
                     target.x = Random.Range(-20f, 20f);
                     hasTower = true;

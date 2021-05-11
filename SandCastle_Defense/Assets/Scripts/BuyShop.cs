@@ -138,10 +138,10 @@ public class BuyShop : MonoBehaviour
     public void upgradeShovel()
     {
         Debug.Log("upgrading shovel");
-        if (playercontroller.sanddollarCount > 49)
+        if (playercontroller.sanddollarCount > 29)
         {
             canbuyAudio.Play();
-            playercontroller.sanddollarCount = playercontroller.sanddollarCount - 50;
+            playercontroller.sanddollarCount = playercontroller.sanddollarCount - 30;
             playercontroller.SetSanddollarCountText();
 
             //CODE to change shovel to upgraded
@@ -170,10 +170,10 @@ public class BuyShop : MonoBehaviour
     public void upgradeCrabCatcher()
     {
         Debug.Log("upgrading crabcatcher");
-        if (playercontroller.sanddollarCount > 49)
+        if (playercontroller.sanddollarCount > 29)
         {
             canbuyAudio.Play();
-            playercontroller.sanddollarCount = playercontroller.sanddollarCount - 50;
+            playercontroller.sanddollarCount = playercontroller.sanddollarCount - 30;
             playercontroller.SetSanddollarCountText();
 
             //CODE to change crabcatcher to upgraded
@@ -196,10 +196,10 @@ public class BuyShop : MonoBehaviour
     public void upgradeBucket()
     {
         Debug.Log("upgrading bucket");
-        if (playercontroller.sanddollarCount > 49)
+        if (playercontroller.sanddollarCount > 29)
         {
             canbuyAudio.Play();
-            playercontroller.sanddollarCount = playercontroller.sanddollarCount - 50;
+            playercontroller.sanddollarCount = playercontroller.sanddollarCount - 30;
             playercontroller.SetSanddollarCountText();
 
             //CODE to change bucket to upgraded
