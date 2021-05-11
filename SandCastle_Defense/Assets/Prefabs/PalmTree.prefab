@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4630682006141167675}
   - component: {fileID: 4630682006141167674}
-  - component: {fileID: 4630682006141167672}
   - component: {fileID: 4630682006141167673}
   m_Layer: 0
   m_Name: TreeTop
@@ -84,21 +83,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!111 &4630682006141167672
-Animation:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4630682006141167668}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Animation: {fileID: 7400000, guid: 13b802a9c9ceb39409529b93290c24ca, type: 2}
-  m_Animations: []
-  m_WrapMode: 0
-  m_PlayAutomatically: 1
-  m_AnimatePhysics: 0
-  m_CullingType: 0
 --- !u!95 &4630682006141167673
 Animator:
   serializedVersion: 3
@@ -188,7 +172,6 @@ GameObject:
   - component: {fileID: 4630682007015691818}
   - component: {fileID: 4630682007015691817}
   - component: {fileID: 4630682007015691823}
-  - component: {fileID: 4630682007015691816}
   m_Layer: 0
   m_Name: TreeBottom
   m_TagString: Untagged
@@ -280,18 +263,3 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!111 &4630682007015691816
-Animation:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4630682007015691819}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Animation: {fileID: 7400000, guid: 957e202888976e34f919f49a956b19c2, type: 2}
-  m_Animations: []
-  m_WrapMode: 0
-  m_PlayAutomatically: 1
-  m_AnimatePhysics: 0
-  m_CullingType: 0
