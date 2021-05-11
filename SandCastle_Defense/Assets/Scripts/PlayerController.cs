@@ -101,7 +101,7 @@ public class PlayerController : MonoBehaviour
 
     void Start()
     {
-        sanddollarCount = 100;
+        sanddollarCount = 0;
         SetSanddollarCountText();
         SetBucketState();
         digsLeftUI.SetActive(false);
